@@ -20,11 +20,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        Animation animationIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in);
-//        Animation animationOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);
-        //^^Fade in and Fade out animation through XML files
-
         mainButton = (Button) findViewById(R.id.mainButton);
         nextButton = (Button) findViewById(R.id.nextButton);
 
@@ -77,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
         fadeOut.setFillAfter(true);
         fadeOut.setStartOffset(4200 + fadeIn.getStartOffset());
     }
-    //^^ Fade animation (play around with later)
 
     public void openLevelOne(){
         Intent intent = new Intent(this, LevelOneActivity.class);
